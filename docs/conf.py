@@ -9,7 +9,7 @@
 # add these directories to sys.path here. If the directory is relative to the
 # documentation root, use os.path.abspath to make it absolute, like shown here.
 #
-import sphinx_gallery
+from sphinx_gallery.sorting import FileNameSortKey
 import os
 import sys
 sys.path.append(os.path.abspath('../..'))
@@ -68,7 +68,7 @@ sphinx_gallery_conf = {
     # path to where to save gallery generated output
     'gallery_dirs': ['auto_gallery-1', 'auto_gallery-2'],
     # specify that examples should be ordered according to filename
-    'within_subsection_order': sphinx_gallery.sorting.FileNameSortKey,
+    'within_subsection_order': FileNameSortKey,
     # directory where function granular galleries are stored
     'backreferences_dir': 'gen_modules/backreferences',
     # Modules for which function level galleries are created.  In
