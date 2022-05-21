@@ -1,4 +1,4 @@
-def fun_power(x,y):
+def f_power(x,y):
     """
     Returns x raised to the power of y.
 
