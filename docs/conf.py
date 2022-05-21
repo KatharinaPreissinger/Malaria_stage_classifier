@@ -17,6 +17,7 @@ sys.path.append(os.path.abspath('..'))
 #sys.path.insert(0, os.path.abspath('.'))
 #import sys
 import SampleModule
+import sphinx_gallery
 from sphinx_gallery.sorting import FileNameSortKey
 
 # -- Project information -----------------------------------------------------
