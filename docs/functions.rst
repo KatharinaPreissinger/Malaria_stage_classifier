@@ -4,9 +4,6 @@ Module functions
 Functions have been documented using ``sphinx.ext.autodoc`` and the docstring
 style extension 'sphinx.ext.napoleon':
 
-Module contours
----------------
-
 .. autofunction:: ClassificationsRBC.contours.al_ratio
 .. autofunction:: ClassificationsRBC.contours.draw_cont
 .. autofunction:: ClassificationsRBC.contours.filter_cont
@@ -20,9 +17,6 @@ Module contours
 .. autofunction:: ClassificationsRBC.contours.RGB_2_bin
 .. autofunction:: ClassificationsRBC.contours.write_df
 
-Module extractCuts
-------------------
-
 .. autofunction:: ClassificationsRBC.extractCuts.calc_asymcut
 .. autofunction:: ClassificationsRBC.extractCuts.calc_straight
 .. autofunction:: ClassificationsRBC.extractCuts.centre_of_mass
@@ -31,9 +25,6 @@ Module extractCuts
 .. autofunction:: ClassificationsRBC.extractCuts.match_coord
 .. autofunction:: ClassificationsRBC.extractCuts.points_incell
 .. autofunction:: ClassificationsRBC.extractCuts.sort_coord
-
-Module NN
----------
 
 .. autofunction:: ClassificationsRBC.NN.format_values
 .. autofunction:: ClassificationsRBC.NN.format_NN_values
