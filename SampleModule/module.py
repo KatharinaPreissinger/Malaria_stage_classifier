@@ -42,6 +42,76 @@ def al_ratio(contour_length, contour_area):
         i += 1
     return ratio
 
+class AFMimg():
+    """A class that contains the x-, y-, z-values, filename and directory of the raw AFM file
+    
+    Attributes
+    ----------
+    xvalues : ndarray
+        N dimensional array with type float that contains the x-values of the igor pro height trace data
+    yvalues : ndarray
+        N dimensional array with type float that contains the y-values of the igor pro height trace data
+    zvalues : ndarray
+        N dimensional array with type float that contains the z-values of the igor pro height trace data
+    filename : str
+        String that contains the name of the .txt file
+    directory : str
+        String that contains the directory of the .txt file
+        
+    """
+    def __init__(self, xvalues, yvalues, zvalues, filename, directory):
+        """
+        Parameters
+        ----------
+        xvalues : ndarray
+            N dimensional array with type float that contains the x-values of the igor pro height trace data
+        yvalues : ndarray
+            N dimensional array with type float that contains the y-values of the igor pro height trace data
+        zvalues : ndarray
+            N dimensional array with type float that contains the z-values of the igor pro height trace data
+        filename : str
+            String that contains the name of the .txt file
+        directory : str
+            String that contains the directory of the .txt file
+            
+        """
+        self.xvalues = xvalues
+        self.yvalues = yvalues
+        self.zvalues = zvalues
+        self.filename = filename
+        self.directory = [directory]
+
+    def set_directory(self, new_dir):
+        """Adds a new directory to the class
+        
+        Parameters
+        ----------
+        new_dir : str
+           The new directory
+           
+        """
+        self.directory.append(new_dir)
+        
+    def create_directory(self, directory, name):
+        """Creates a new directory
+      
+        Parameters
+        ----------
+        directory : str
+           The directory of the new folder
+        name : str
+           The name of the new folder
+    
+        Returns
+        -------
+        str
+           The directory + name of the new folder
+        """
+        new_dir = directory[0] + '/' + name
+        if not os.path.exists(new_dir):
+            os.makedirs(new_dir)
+        return new_dir
+
 class class_power():
     """A class that performs the power function."""
     def __init__(self, x, y):
