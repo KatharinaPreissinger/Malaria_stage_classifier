@@ -172,18 +172,6 @@ def find_contour_img(img, img_thr, directory):
     directory : str
         The directory where the image is saved
         
-    Functions
-    ---------
-    al_ratio(contour_length, contour_area)
-    draw_cont(img, contour, name, directory)
-    filter_cont(contour, index)
-    filter_df(ind, c_length, c_area, c_ratio)
-    find_cont(img)
-    filter_values(df, column, min_val, max_val)
-    get_contarea(contour)
-    RGB_2_bin(img, value)
-    write_df(c_length, c_area, c_ratio) 
-        
     Returns
     -------
     image, array
@@ -264,11 +252,7 @@ def normalise_zvalues(img):
     ----------
     img : image
         N dimensional array with type float that contains the z_values of the data
-        
-    Functions
-    ---------
-    find_extrema(img)
-    
+
     Returns
     -------
     array
