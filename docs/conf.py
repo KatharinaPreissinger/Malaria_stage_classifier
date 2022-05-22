@@ -16,11 +16,13 @@ sys.path.append(os.path.abspath('../..'))
 sys.path.append(os.path.abspath('..'))
 #sys.path.insert(0, os.path.abspath('.'))
 #import sys
-import SampleModule
+#import SampleModule
+import ClassificationRBC
 
 # -- Project information -----------------------------------------------------
 
-project = 'sample-project'
+#project = 'sample-project'
+project = 'Stage-specific-classification-of-RBCs'
 copyright = '2020, <Author>'
 author = '<Author>'
 
@@ -73,7 +75,7 @@ sphinx_gallery_conf = {
     'backreferences_dir': 'gen_modules/backreferences',
     # Modules for which function level galleries are created.  In
     # this case sphinx_gallery and numpy in a tuple of strings.
-    'doc_module': ('SampleModule'),
+    'doc_module': ('ClassificationRBC')#('SampleModule'),
 }
 
 # configuration for intersphinx: refer to the Python standard library.
