@@ -14,17 +14,14 @@ import os
 import sys
 sys.path.append(os.path.abspath('../..'))
 sys.path.append(os.path.abspath('..'))
-#sys.path.insert(0, os.path.abspath('.'))
-#import sys
-#import SampleModule
+
 import ClassificationRBC
 
 # -- Project information -----------------------------------------------------
 
-#project = 'sample-project'
 project = 'Stage-specific-classification-of-RBCs'
-copyright = '2020, <Author>'
-author = '<Author>'
+copyright = '2020, Katharina Preißinger'
+author = 'Katharina Preißinger'
 
 # The full version, including alpha/beta/rc tags
 release = '0.0.1'
@@ -37,7 +34,6 @@ release = '0.0.1'
 # ones.
 extensions = [
     'sphinx.ext.autodoc',
-    #'sphinx_gallery.gen_gallery',
     'sphinx.ext.napoleon',
     'sphinx.ext.intersphinx',
     ]
@@ -69,13 +65,11 @@ sphinx_gallery_conf = {
     'examples_dirs': ['../sample-gallery-1', '../sample-gallery-2'],
     # path to where to save gallery generated output
     'gallery_dirs': ['auto_gallery-1', 'auto_gallery-2'],
-    # specify that examples should be ordered according to filename
-    #'within_subsection_order': FileNameSortKey,
     # directory where function granular galleries are stored
     'backreferences_dir': 'gen_modules/backreferences',
     # Modules for which function level galleries are created.  In
     # this case sphinx_gallery and numpy in a tuple of strings.
-    'doc_module': ('ClassificationRBC')#('SampleModule'),
+    'doc_module': ('ClassificationRBC'),
 }
 
 # configuration for intersphinx: refer to the Python standard library.
