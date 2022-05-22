@@ -1,23 +1,3 @@
-"""
-This script contains all classes for the evaluation of raw AFM and LM files and the geometric properties of the extracted cells
-    
-"""
-# libraries
-import cv2
-import matplotlib
-import matplotlib.pyplot as plt
-import numpy as np
-import os
-from PIL import Image
-import sys
-from tkinter import *
-import scipy
-from scipy import ndimage
-
-# scripts
-from Classification_of_RBCs_extractCuts import *
-from Classification_of_RBCs_contours import *
-
 class AFMimg():
     """A class that contains the x-, y-, z-values, filename and directory of the raw AFM file
     
