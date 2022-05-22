@@ -4,8 +4,8 @@ Module functions
 Functions have been documented using ``sphinx.ext.autodoc`` and the docstring
 style extension 'sphinx.ext.napoleon':
 
-Module contours.py
-------------------
+Module contours
+---------------
 
 .. autofunction:: ClassificationsRBC.contours.al_ratio
 .. autofunction:: ClassificationsRBC.contours.draw_cont
@@ -37,8 +37,8 @@ Module contours.py
 
     <div class="sphx-glr-clear"></div>
 
-Module extractCuts.py
----------------------
+Module extractCuts
+------------------
 
 .. autofunction:: ClassificationsRBC.extractCuts.calc_asymcut
 .. autofunction:: ClassificationsRBC.extractCuts.calc_straight
@@ -62,8 +62,8 @@ Module extractCuts.py
 
     <div class="sphx-glr-clear"></div>
 
-Module NN.py
-------------
+Module NN
+---------
 
 .. autofunction:: ClassificationsRBC.NN.format_values
 .. autofunction:: ClassificationsRBC.NN.format_NN_values
