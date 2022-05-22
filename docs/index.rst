@@ -16,18 +16,3 @@ to document your module.
    getting_started
    functions
    classes
-
-.. toctree::
-   :maxdepth: 2
-   :caption: Galleries:
-
-   auto_gallery-1/index
-   auto_gallery-2/index
-
-
-Indices and tables
-==================
-
-* :ref:`genindex`
-* :ref:`modindex`
-* :ref:`search`
