@@ -1,4 +1,4 @@
-def f_power(x,y):
+def fed_power(x,y):
     """
     Returns x raised to the power of y.
 
