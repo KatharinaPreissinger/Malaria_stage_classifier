@@ -33,6 +33,10 @@ Module contours.py
 .. include:: gen_modules/backreferences/ClassificationsRBC.contours.RGB_2_bin.examples
 .. include:: gen_modules/backreferences/ClassificationsRBC.contours.write_df.examples
 
+.. raw:: html
+
+    <div class="sphx-glr-clear"></div>
+
 Module extractCuts.py
 ---------------------
 
@@ -53,6 +57,10 @@ Module extractCuts.py
 .. include:: gen_modules/backreferences/ClassificationsRBC.extractCuts.match_coord
 .. include:: gen_modules/backreferences/ClassificationsRBC.extractCuts.points_incell
 .. include:: gen_modules/backreferences/ClassificationsRBC.extractCuts.sort_coord
+
+.. raw:: html
+
+    <div class="sphx-glr-clear"></div>
 
 Module NN.py
 ------------
