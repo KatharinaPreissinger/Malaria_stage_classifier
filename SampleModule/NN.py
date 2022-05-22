@@ -1,33 +1,3 @@
-"""
-Python script for NN training.
-This script reads text files of characteristic cuts and trains a neural network for 20 epochs.
-The network is then saved.
-"""
-
-# libraries
-import os
-from collections import Counter
-from PIL import Image
-import cv2
-import imblearn
-from imblearn.over_sampling import RandomOverSampler 
-import random
-import numpy as np
-import matplotlib.image as mpimg
-import matplotlib.pyplot as plt
-import tensorflow
-from sklearn.model_selection import train_test_split
-from tensorflow.keras.preprocessing.image import ImageDataGenerator
-from tensorflow.keras.models import Sequential
-from tensorflow.keras.layers import (Conv1D, MaxPooling1D, Dropout, Flatten, Dense, Activation,
-                                    BatchNormalization, MaxPool1D)
-from sklearn.metrics import accuracy_score, confusion_matrix
-import shutil
-from tensorflow.keras.models import load_model
-from tensorflow.keras.utils import to_categorical
-from tensorflow.keras.regularizers import *
-from tensorflow.keras.optimizers import RMSprop
-
 def format_values(name, spath):
     """Formats values and writes them into array
     Parameters
