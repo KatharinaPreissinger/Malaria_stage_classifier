@@ -9,8 +9,8 @@ def al_ratio(contour_length, contour_area):
         1 dimensional array with type float that contains area of contours
     Returns
     -------
-    array
-        ratio : an array with type float that contains ratio of contour length to area
+    ratio : ndarray
+        1 dimensional array with type float that contains ratio of contour length to area
     
     """
     ratio = []
@@ -39,8 +39,8 @@ def draw_cont(img, contour, name, directory):
         
     Returns
     -------
-    image
-        an image that contains the selected contours
+    new_img : ndarray
+        N x N dimensional array that contains the selected contours
     
     """
     new_img = np.zeros((img.shape[0], img.shape[1],3), np.uint8)*255
@@ -63,8 +63,8 @@ def filter_cont(contour, index):
         
     Returns
     -------
-    array
-        an array with type contours that contains selected contours
+    cnt : ndarray
+        N x 2 dimensional array with type contours that contains selected contours
     
     """
     cnt = []
@@ -88,11 +88,14 @@ def filter_df(ind, c_length, c_area, c_ratio):
         
     Returns
     -------
-    DataFrame, array, array, array
-        DataFrame (df) : a DataFrame that contains properties of selected contours
-        array (length) : an array with type float that contains the length of each selected contour
-        array (area) : an array with type float that contains the area of each selected contour
-        array (ratio) : an array with type float that contains the length/area ratio of each selected contour
+    df : DataFrame
+        DataFrame that contains properties of selected contours
+    length : ndarray
+        1 dimensional array with type float that contains the length of each selected contour
+    area : ndarray
+        1 dimensional array with type float that contains the area of each selected contour
+    ratio : ndarray
+        1 dimensional array with type float that contains the length/area ratio of each selected contour
     
     """
     length = []
@@ -123,8 +126,8 @@ def filter_values(df, column, min_val, max_val):
         
     Returns
     -------
-    array
-        an array with type int that describes values, which fulfill conditions
+    ind : ndarray
+        1 dimensional array with type int that describes values, which fulfill conditions
     
     """
     df_new = df[column].between(min_val, max_val)
@@ -142,13 +145,14 @@ def find_cont(img):
     Parameters
     ----------
     img : ndarray
-        N dimensional array with type int that contains the image to process
+        N x N dimensional array with type int that contains the image to process
     
     Returns
     -------
-    image, contours
-        image: an image that contains the detected contours
-        contours: a list of coordinates of contours that were detected in the image
+    canvas : ndarray
+        N x N dimensional array that contains the detected contours
+    contour : contours
+        List of coordinates of contours that were detected in the image
     
     """
     contour, hierarchy = cv2.findContours(img, cv2.RETR_LIST, cv2.CHAIN_APPROX_NONE)
@@ -165,18 +169,17 @@ def find_contour_img(img, img_thr, directory):
     
     Parameters
     ----------
-    img : image
-        N dimensional array with type int that contains the original image
-    img_thr : image
-        N dimensional array with type int that contains the thresholded image
+    img : ndarray
+        N x N dimensional array with type int that contains the original image
+    img_thr : ndarray
+        N x N dimensional array with type int that contains the thresholded image
     directory : str
         The directory where the image is saved
         
     Returns
     -------
-    image, array
-        image (img_ab) : an array with type int that contains filtered contours
-        array (c_a) : an array with type contours that contains selected contours
+    c_a : ndarray
+        N x N x 2 array with type contours that contains selected contours
     
     """
     # Finds contours in image
@@ -198,7 +201,6 @@ def find_contour_img(img, img_thr, directory):
     df_a, length_a, area_a, ratio_a = filter_df(ind_a, length_l, area_l, ratio_l)
     c_a = filter_cont(c_l, ind_a)
     img_a = draw_cont(img, c_a, 'areas', directory)
-
     return c_a
 
 def find_extrema(img):
@@ -211,9 +213,10 @@ def find_extrema(img):
         
     Returns
     -------
-    int, int
-        int (z_min) : min value in array
-        int (z_max) : max value in array
+    z_min : int
+        Minimum value in array
+    z_max : int
+        Maximum value in array
     
     """   
     ind_min = np.argmin(img) # index of flattened array
@@ -233,9 +236,10 @@ def get_contarea(contour):
         
     Returns
     -------
-    array, array
-        array (length) : an array with type float that contains length of contours
-        array (area) : an array with type float that contains area of contours
+    length : ndarray
+        1 dimensional array with type float that contains length of contours
+    area : ndarray
+        1 dimensional array with type float that contains area of contours
     
     """
     length = []
@@ -255,8 +259,8 @@ def normalise_zvalues(img):
 
     Returns
     -------
-    array
-        an array with type int that contains grayscale values of the image
+    imggr : ndarray
+        N x N dimensional array with type int that contains grayscale values of the image
         
     """       
     # Calculates grayscale image from height trace values
@@ -284,8 +288,8 @@ def RGB_2_bin(img, value):
     
     Returns
     -------
-    image
-        a binary image
+    img_new : ndarray
+        N x N dimensional array that contains a binary image
         
     """    
     img_new = np.zeros((img.shape[0], img.shape[1]), dtype=np.uint8) 
@@ -315,8 +319,8 @@ def write_df(c_length, c_area, ratio):
         
     Returns
     -------
-    DataFrame
-        df : a DataFrame that contains contour length, area and ratio length/area
+    df : DataFrame
+        DataFrame that contains contour length, area and ratio length/area
     
     """
     df = pd.DataFrame({"contour length": c_length, "contour area": c_area, "length/area": ratio})
