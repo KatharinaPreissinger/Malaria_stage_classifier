@@ -20,7 +20,7 @@ import ClassificationRBC
 # -- Project information -----------------------------------------------------
 
 project = 'Stage-specific-classification-of-RBCs'
-copyright = '2020, Katharina Preißinger'
+copyright = '2022, Katharina Preißinger'
 author = 'Katharina Preißinger'
 
 # The full version, including alpha/beta/rc tags
