@@ -60,8 +60,8 @@ class AFMimg():
     
         Returns
         -------
-        str
-           The directory + name of the new folder
+        new_dir : str
+           The directory and name of the new folder
 
         """
         new_dir = directory[0] + '/' + name
@@ -249,8 +249,8 @@ class LMimg():
     
         Returns
         -------
-        str
-           The directory + name of the new folder
+        new_dir : str
+           The directory and name of the new folder
 
         """
         new_dir = directory[0] + '/' + name
