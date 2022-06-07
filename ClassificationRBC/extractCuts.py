@@ -1,6 +1,7 @@
 def calc_asymcut(values, coord, ori, imgh, imgrh, imgw, imgrw, centre):
     """Determines the cross-section along the most asymmetric cut through the z_values and shifts
     the origin to the geometric centre
+    
     Parameters
     ----------
     values : ndarray
@@ -20,7 +21,7 @@ def calc_asymcut(values, coord, ori, imgh, imgrh, imgw, imgrw, centre):
         The resolution of the imag in x-direction
     centre : ndarray
         N dimensional array with type float, float that contains the x- and y-coordinates of the geometric
-        cetnre
+        centre
         
     Returns
     -------
@@ -268,9 +269,9 @@ def centre_of_mass(all_coord, img):
         
     Returns
     -------
-    array
-        an array with type float, float that contains the x- and y-coordinates of the centre of mass weighted by the corresponding
-        z-values
+    centre_mass : ndarray
+        N x 2 array with type float, float that contains the x- and y-coordinates of the centre of mass weighted
+        by the corresponding z-values
     
     """
     centre_mass = []
@@ -292,13 +293,6 @@ def centre_of_mass(all_coord, img):
 
     i = 0
     for mass_c in mass_coord:
-        """sumh = np.asarray(mass_height[i]).astype(np.int64).sum()
-        sumx = np.asarray(([m[0] for m in mass_c])).astype(np.int64).sum()
-        print(sumx, sumh)
-        sumh = np.asarray(mass_height[i]).sum()
-        sumx = np.asarray(([m[0] for m in mass_c])).sum()
-        print(sumx, sumh)
-        """
         sumh = sum(mass_height[i])
         sumx = sum(([m[0] for m in mass_c]))
         x_mcentre = sumx/sumh
@@ -322,10 +316,9 @@ def find_coordborder(cnt_drawn, img):
     
     Returns
     -------
-    array
-        an array with type float, float, float that contains the y-coordinate, the minimum and
-        maximum x-coordinate of the points
-        inside a contour
+    img_coord : ndarray
+        N x 3 array with type float, float, float that contains the y-coordinate, the minimum and maximum
+        x-coordinate of the points inside a contour
         
     """    
     img_coord = []
@@ -365,9 +358,10 @@ def geometric_centre(img_coord):
         
     Returns
     -------
-    array, array
-        array (centre) : an array with type float, float that contains the x- and y-coordinate of the centre of a rectangle
-        array (all_coord) : an array with type float, float that contains all x- and y-coordinates inside a rectangle
+    centre : ndarray
+        N x 2 array with type float, float that contains the x- and y-coordinate of the centre of a rectangle
+    all_coord : ndarray
+        N x N x 2 array with type float, float that contains all x- and y-coordinates inside a rectangle
     
     """
     all_coord = []
@@ -412,11 +406,11 @@ def match_coord(x_straight, y_straight, cntCell):
         
     Returns
     -------
-    array, array
-        array (match_coord) : an array with type float, float, float that contains the x-coordinate,
-        the y-coordinate and
+    match_coord : ndarray
+        N x 3 array with type float, float, float that contains the x-coordinate, the y-coordinate and
         the distance of the point from the geometric centre
-        array (sort_coord) : an array with type float, float that contains the x- and y-coordinate of a point
+    sort_coord : ndarray
+        N x 2 array with type float, float that contains the x- and y-coordinate of a point
         
     """
     coord_match = []
@@ -480,8 +474,8 @@ def points_incell(img_coord, img):
         
     Returns
     -------
-    array
-        an array with type float that contains all z-values inside a contour
+    points_inside : ndarray
+        N x N dimensional array with type float that contains all z-values inside a contour
     
     """
     points_inside = []
@@ -516,8 +510,8 @@ def sort_coord(coord_rmatch, coord_lmatch):
         
     Returns
     -------
-    array
-        an array with type (float, float), (float, float) that contains the x- and y-coordinates of the
+    coord_sort : ndarray
+        N x 2 dimensional array with type float, float that contains the x- and y-coordinates of the
         points intersecting with the straight of highest asymmetry left and right of the centre of the
         object
         
