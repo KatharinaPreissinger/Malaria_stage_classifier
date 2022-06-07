@@ -61,10 +61,6 @@ html_static_path = ['_static']
 
 # sphinx-gallery configuration
 sphinx_gallery_conf = {
-    # path to your example scripts
-    #'examples_dirs': ['../sample-gallery-1', '../sample-gallery-2'],
-    # path to where to save gallery generated output
-    #'gallery_dirs': ['auto_gallery-1', 'auto_gallery-2'],
     # directory where function granular galleries are stored
     'backreferences_dir': 'gen_modules/backreferences',
     # Modules for which function level galleries are created.  In
