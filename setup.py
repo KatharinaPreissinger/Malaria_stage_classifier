@@ -1,13 +1,13 @@
 from setuptools import setup
 
 setup(
-  name='SampleModule',
+  name='ClassificationRBC',
   version='0.1.0',
-  author='<Author>',
-  author_email='abc@example.com',
-  packages=['SampleModule'],
-  description='An example package',
-  url="https://github.com/sphinx-gallery/sample-project",
+  author='Katharina Preißinger',
+  author_email='katharina.preissinger@physik.uni-augsburg.de',
+  packages=['ClassificationRBC'],
+  description='A package for the stage-specific classification of RBCs in microscopy images',
+  url="https://github.com/KatharinaPreissinger/Stage_specific_classification_of_RBCs",
   classifiers=[
   "Programming Language :: Python :: 3",
   "License :: OSI Approved :: MIT License",
