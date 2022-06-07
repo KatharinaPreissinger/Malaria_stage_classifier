@@ -1,17 +1,20 @@
 def format_values(name, spath):
     """Formats values and writes them into array
+    
     Parameters
-        ----------
+    ----------
     name : str
         Name of the txt file
     spath : str
         Name of the directory
     parameter : str
         Name of the parameter
+        
     Returns
     -------
-    array
-        an array with type float that contains the content of the txt file
+    values : ndarray
+        1 dimensional array with type float that contains the content of the text file
+        
     """
     values = []
     # reads x_data from folder
@@ -82,18 +85,21 @@ def format_values(name, spath):
 
 def format_NN_values(name, spath):
     """Formats values for NN input and writes them into array
+    
     Parameters
-        ----------
+    ----------
     name : str
         Name of the txt file
     spath : str
         Name of the directory
     parameter : str
         Name of the parameter
+        
     Returns
     -------
-    array
-        an array with type float that contains the content of the txt file
+    values : ndarray
+        1 dimensional array with type float that contains the content of the text file
+        
     """
     values = []
     # reads x_data from folder
@@ -159,9 +165,10 @@ def read_images(path):
         
     Returns
     -------
-    array, array
-        array (carr_form) : an array with type float that contains N times two characteristic cross-sections with 50 data points
-        array (label_form) : an array with type int that contains the labels of N cells
+    carr_form : ndarray
+        N x (N x N) dimensional array with type float that contains N times two characteristic cross-sections with 50 data points
+    label_form : ndarray
+        1 dimensional array with type int that contains the labels of N cells
     
     """
     # Opens the conten of the folder
@@ -230,7 +237,6 @@ def read_images(path):
         carr_norm.append(ca_new)
     carr_form = np.asarray(carr_norm)
     label_form = np.asarray(label)
-    
     return carr_form, label_form
 
 def train_model(model, carr_form, label_form, cut_train, label_train, directory, mname, tlabel):
@@ -253,8 +259,8 @@ def train_model(model, carr_form, label_form, cut_train, label_train, directory,
         
     Returns
     -------
-    Sequential
-        a Sequential that contains the trained new keras model
+    model : tf.keras.Sequential
+        Sequential class that contains the trained new keras model
         
     """
     # Formats the input data and target labels
@@ -277,5 +283,4 @@ def train_model(model, carr_form, label_form, cut_train, label_train, directory,
     tlabel.config(text="Please wait, network is training... 90%")
     # Saves the new model
     model.save(directory + '/' + mname + '.h5')
-    
     return model
