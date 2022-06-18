@@ -582,12 +582,18 @@ class ToolTip(object):
         widget.bind('<Leave>', leave)
 
     def showTooltip(self):
+        """Shows a window, when hovering above an icon
+        
+        """
         self.tooltipwindow = tw = tk.Toplevel(self.widget)
         tw.wm_overrideredirect(1) # window without border and no normal means of closing
         tw.wm_geometry("+{}+{}".format(self.widget.winfo_rootx(), self.widget.winfo_rooty()))
         label = tk.Label(tw, text = self.text, background = "#ffffe0", relief = 'solid', borderwidth = 1).pack()
 
     def hideTooltip(self):
+        """Hides a window, when previously shown by hovering above an icon
+        
+        """
         tw = self.tooltipwindow
         try:
             tw.destroy()
