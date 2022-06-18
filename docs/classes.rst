@@ -5,6 +5,7 @@ Classes have been documented using ``sphinx.ext.autodoc`` and the docstring
 style extension 'sphinx.ext.napoleon':
 
 .. autoclass:: ClassificationRBC.classes.AFMimg
+   :members:
 .. autoclass:: ClassificationRBC.classes.contAFMimg
 .. autoclass:: ClassificationRBC.classes.propAFMimg
 .. autoclass:: ClassificationRBC.classes.LMimg
