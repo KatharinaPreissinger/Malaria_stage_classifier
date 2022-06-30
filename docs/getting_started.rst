@@ -20,19 +20,19 @@ Download
 How to use the package
 ======================
 
-* open the code file `Classification_of_RBCs` in jupyter
-* Tab `Settings`:
+1. Open the code file `Classification_of_RBCs` in jupyter
+2. Tab `Settings`:
     * select the file you want to analyse
     * choose the type, in case of header lines in the text file choose the number of header lines
     * select the folder to save your output
-* Tab `Show image`:
+3. Tab `Show image`:
     * displays the image
-* Tab `Threshold image`:
+4. Tab `Threshold image`:
     * use the `Set threshold` button to show the thresholded image
     * optionally, the preset threshold value can be changed manually
-* Tab `Detect cells`:
+5. Tab `Detect cells`:
     * the cell detection parameters can be changed manually and set back to default
-* Tab `Classify cells`:
+6. Tab `Classify cells`:
     * `Load NN` loads the neural network
     * `Predict stages` predicts the cell stage
     * `Change predictions` provides the possibility to change the prediction by clicking on the cell
