@@ -1,6 +1,6 @@
-# Stage-specific classification of RBCs
+# Malaria stage classifier
 
-This is a documentation of a Python package to classify RBCs in microscopy images. It includes:
+This is the documentation of a Python package to classify RBCs in microscopy images. It includes:
 
 * a package for the stage-specific classification of RBCs (`ClassificationRBC`) with four modules:
     * `NN.py` which initialises the neural network and trains the data
