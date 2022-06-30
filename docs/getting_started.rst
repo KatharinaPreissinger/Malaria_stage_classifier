@@ -1,3 +1,6 @@
+Malaria stage classifier
+========================
+
 This is the documentation of a Python package to classify RBCs in microscopy images. It includes:
 
 * a package for the stage-specific classification of RBCs (`ClassificationRBC`) with four modules:
@@ -5,13 +8,17 @@ This is the documentation of a Python package to classify RBCs in microscopy ima
     * `classes.py` which contains classes for evaluating the properties of each RBC
     * `contours.py` which provides functions for the detection of RBCs in an image
     * `extractCuts.py` which provides functions for extracting the most characteristic profiles in the RBC
+    
+Download
+========
 
-* to use the package, please follow these instructions:
-    * download the `Code` folder which contains the code, the datasets for the neural network, the logo for the pop up windows, and the neural networks
-    * download the `Data` folder which contains three data samples
-    * install jupyter notebook on your computer https://jupyter.org/install
+1. Download `Code` folder which contains the code, the logo for the pop up windows, three pre-trained neural networks, sample images, and a folder for saving the evaluated data from: https://github.com/KatharinaPreissinger/Stage_specific_classification_of_RBCs
+2. If you want to retrain the neural network, please download the `Datasets_for_NN` (this requires at least 200 MB of free space)
+3. Install jupyter notebook on your computer https://jupyter.org/install
+4. Read the documentation for more information about the classes and modules
 
-# How to use the package
+How to use the package
+======================
 
 * open the code file `Classification_of_RBCs` in jupyter
 * Tab `Settings`:
@@ -31,11 +38,3 @@ This is the documentation of a Python package to classify RBCs in microscopy ima
     * `Change predictions` provides the possibility to change the prediction by clicking on the cell
     * `Add data to NN` offers the option to add new data to the NN and retrains the NN
     * `Save predictions` saves the predictions in a text or csv file and offers the option to analyse new data
-
-Getting started
-===============
-
-Get started with our package with these steps:
-
-1. Download the program from: https://github.com/KatharinaPreissinger/Stage_specific_classification_of_RBCs
-2. Read the documentation for more information about the classes and modules
