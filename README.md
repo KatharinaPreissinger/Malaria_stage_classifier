@@ -1,3 +1,5 @@
+# upload large files: https://medium.com/linkit-intecs/how-to-upload-large-files-to-github-repository-2b1e03723d2
+
 # Malaria stage classifier
 
 This is the documentation of a Python package to classify RBCs in microscopy images. It includes:
