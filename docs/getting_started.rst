@@ -37,5 +37,5 @@ How to use the package
     * `Predict stages` predicts the cell stage
     * `Change predictions` provides the possibility to change the prediction by clicking on the cell
     * `Add data to NN` offers the option to add new data to the NN and retrains the NN
-      * to use this option, please download the training data from: https://drive.google.com/file/d/1irIMeew79byJGQG8ndEQEeWAb4ILQrB_/view?usp=sharing
+       * to use this option, please download the training data from: https://drive.google.com/file/d/1irIMeew79byJGQG8ndEQEeWAb4ILQrB_/view?usp=sharing
     * `Save predictions` saves the predictions in a text or csv file and offers the option to analyse new data
