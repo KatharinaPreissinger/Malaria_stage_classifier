@@ -15,7 +15,7 @@ import sys
 sys.path.append(os.path.abspath('../..'))
 sys.path.append(os.path.abspath('..'))
 
-import Module
+import Modules
 
 # -- Project information -----------------------------------------------------
 
@@ -65,7 +65,7 @@ sphinx_gallery_conf = {
     'backreferences_dir': 'gen_modules/backreferences',
     # Modules for which function level galleries are created.  In
     # this case sphinx_gallery and numpy in a tuple of strings.
-    'doc_module': ('Module'),
+    'doc_module': ('Modules'),
 }
 
 # configuration for intersphinx: refer to the Python standard library.
