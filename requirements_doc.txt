@@ -3,3 +3,9 @@ sphinx-gallery
 sphinx_rtd_theme
 matplotlib
 pandas
+numpy
+opencv
+skimage
+sklearn
+tensorflow 
+tkinter
