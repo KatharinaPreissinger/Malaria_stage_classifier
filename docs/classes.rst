@@ -4,31 +4,31 @@ Module classes
 Classes have been documented using ``sphinx.ext.autodoc`` and the docstring
 style extension 'sphinx.ext.napoleon':
 
-.. autoclass:: Module.classes.AFMimg
+.. autoclass:: Modules.classes.AFMimg
    :members:
-.. autoclass:: Module.classes.contAFMimg
+.. autoclass:: Modules.classes.contAFMimg
    :members:
-.. autoclass:: Module.classes.propAFMimg
+.. autoclass:: Modules.classes.propAFMimg
    :members:
-.. autoclass:: Module.classes.LMimg
+.. autoclass:: Modules.classes.LMimg
    :members:
-.. autoclass:: Module.classes.contLMimg
+.. autoclass:: Modules.classes.contLMimg
    :members:
-.. autoclass:: Module.classes.propLMimg
+.. autoclass:: Modules.classes.propLMimg
    :members:
-.. autoclass:: Module.classes.Cell
+.. autoclass:: Modules.classes.Cell
    :members:
-.. autoclass:: Module.classes.ToolTip
+.. autoclass:: Modules.classes.ToolTip
    :members:
 
-.. include:: gen_modules/backreferences/Module.classes.AFMimg.examples
-.. include:: gen_modules/backreferences/Module.classes.contAFMimg.examples
-.. include:: gen_modules/backreferences/Module.classes.propAFMimg.examples
-.. include:: gen_modules/backreferences/Module.classes.LMimg.examples
-.. include:: gen_modules/backreferences/Module.classes.contLMimg.examples
-.. include:: gen_modules/backreferences/Module.classes.propLMimg.examples
-.. include:: gen_modules/backreferences/Module.classes.Cell.examples
-.. include:: gen_modules/backreferences/Module.classes.ToolTip.examples
+.. include:: gen_modules/backreferences/Modules.classes.AFMimg.examples
+.. include:: gen_modules/backreferences/Modules.classes.contAFMimg.examples
+.. include:: gen_modules/backreferences/Modules.classes.propAFMimg.examples
+.. include:: gen_modules/backreferences/Modules.classes.LMimg.examples
+.. include:: gen_modules/backreferences/Modules.classes.contLMimg.examples
+.. include:: gen_modules/backreferences/Modules.classes.propLMimg.examples
+.. include:: gen_modules/backreferences/Modules.classes.Cell.examples
+.. include:: gen_modules/backreferences/Modules.classes.ToolTip.examples
 
 .. raw:: html
 
