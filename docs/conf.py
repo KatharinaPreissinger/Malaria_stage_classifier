@@ -19,7 +19,7 @@ import ClassificationRBC
 
 # -- Project information -----------------------------------------------------
 
-project = 'Stage-specific-classification-of-RBCs'
+project = 'Malaria stage classifier'
 copyright = '2022, Katharina Preißinger'
 author = 'Katharina Preißinger'
 
@@ -65,7 +65,7 @@ sphinx_gallery_conf = {
     'backreferences_dir': 'gen_modules/backreferences',
     # Modules for which function level galleries are created.  In
     # this case sphinx_gallery and numpy in a tuple of strings.
-    'doc_module': ('ClassificationRBC'),
+    'doc_module': ('Module'),
 }
 
 # configuration for intersphinx: refer to the Python standard library.
@@ -73,4 +73,8 @@ intersphinx_mapping = {
     'python': ('https://docs.python.org/{.major}'.format(sys.version_info), None),
     'matplotlib': ('https://matplotlib.org/', None),
     'pandas': ('https://pandas.pydata.org/', None),
+    'opencv': ('https://opencv.org/releases/', None),
+    'scikit-learn': ('https://scikit-learn.org/stable/', None),
+    'tensorflow' ('https://www.tensorflow.org/', None), 
+    'tkinter': ('https://docs.python.org/3/library/tkinter.html', None),   
 }
