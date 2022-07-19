@@ -76,5 +76,5 @@ intersphinx_mapping = {
     'opencv': ('https://opencv.org/releases/', None),
     'scikit-learn': ('https://scikit-learn.org/stable/', None),
     'tensorflow' ('https://www.tensorflow.org/', None), 
-    'tkinter': ('https://docs.python.org/3/library/tkinter.html', None),   
+    'tkinter': ('https://docs.python.org/3/library/tkinter.html', None)  
 }
