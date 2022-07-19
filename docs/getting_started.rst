@@ -19,7 +19,7 @@ Download
 How to use the package
 ======================
 
-1. Open the code file `Classification_of_RBCs` in jupyter
+1. Run the code file `Malaria_stage_classifier`
 2. Tab `Settings`:
     * select the file you want to analyse
     * choose the type, in case of header lines in the text file choose the number of header lines
