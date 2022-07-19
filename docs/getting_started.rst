@@ -13,7 +13,7 @@ Download
 ========
 
 1. Download `Code` folder which contains the code, the logo for the pop up windows, three pre-trained neural networks, sample images, and a folder for saving the evaluated data from: https://github.com/KatharinaPreissinger/Stage_specific_classification_of_RBCs
-2. If you want to retrain the neural network, please download the `Datasets_for_NN` (this requires at least 200 MB of free space)
+2. If you want to retrain the neural network, please download the `Datasets_for_NN` (this requires at least 250 MB of free space)
 3. Install jupyter notebook on your computer https://jupyter.org/install
 4. Read the documentation for more information about the classes and modules
 
