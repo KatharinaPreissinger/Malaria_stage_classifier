@@ -18,7 +18,7 @@ This is the documentation of a Python package to classify RBCs in microscopy ima
 Download
 ========
 
-1. Download the `Malaria_stage_classifier` folder which contains the code, the logo for the pop up windows, the pre-trained neural networks, and three sample images from: https://github.com/KatharinaPreissinger/Malaria_stage_classifier.git
+1. Download the `Malaria_stage_classifier.zip` folder which contains the code, the logo for the pop up windows, the pre-trained neural networks, and three sample images from: https://github.com/KatharinaPreissinger/Malaria_stage_classifier.git
 2. If you want to retrain the neural network, please download the `Datasets_for_NN` (this requires at least 250 MB of free space)
 3. Read the documentation for more information about the classes and modules
 
