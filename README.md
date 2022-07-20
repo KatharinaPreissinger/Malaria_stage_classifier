@@ -11,7 +11,7 @@ This is the documentation of a Python package to classify RBCs in microscopy ima
       * `Malaria_stage_classifier.py`
     * `Logo` which contains the logo for the pop up windows
     * `Neural_networks` which contains the pre-trained neural networks
-    * `Sample_images` which contains three sample images
+    * `Sample_images` which contains three sample images (Note: for the text files, the number of header lines shoud be set to 3)
 
 * to use the package, please follow these instructions:
     * download the `Malaria_stage_classifier.zip` folder which contains the code, the logo for the pop up windows, the pre-trained neural networks, and three sample images
