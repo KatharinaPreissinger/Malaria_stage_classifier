@@ -43,5 +43,5 @@ How to use the package
     * `Change predictions` provides the possibility to change the prediction by clicking on the cell
     * `Add data to NN` offers the option to add new data to the NN and retrains the NN
     
-      * to use this option, please download the training data from: `Datasets for NN <https://drive.google.com/file/d/1891AI9LPyk25AkYg3Gw4hvg5-V-YGLAS/view?usp=sharing>`_
+      * to use this option, please download the training data from: `Datasets for NN <https://zenodo.org/record/6866337>`_
     * `Save predictions` saves the predictions in a text or csv file and offers the option to analyse new data
